@@ -4,9 +4,11 @@ import math
 import sys
 
 WIDTH, HEIGHT = 800, 600
+
 # Gravitational constant
 G = 1.0
 # Simulation time step
+
 DT = 0.1
 
 class Body:
@@ -42,6 +44,7 @@ def update_bodies(bodies):
     compute_forces(bodies)
     for b in bodies:
         b.pos += b.vel * DT
+
         # Bounce off window edges to keep bodies visible
         if b.pos.x < 0:
             b.pos.x = 0
@@ -57,10 +60,12 @@ def update_bodies(bodies):
             b.vel.y *= -1
 
 
+
 def add_body(bodies, position):
     mass = random.uniform(5, 20)
     # Start with a small random velocity so bodies move gradually
     vel = (random.uniform(-5, 5), random.uniform(-5, 5))
+
     bodies.append(Body(position, vel, mass))
 
 
