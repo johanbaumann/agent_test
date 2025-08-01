@@ -27,4 +27,7 @@ A window will open where you can interact with the simulation:
 - **Right click** to remove the nearest body.
 - Press **`c`** to clear all bodies.
 
+
+=======
 Bodies attract each other using a simple gravitational model. The simulation updates at 60 frames per second.
+
